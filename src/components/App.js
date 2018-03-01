@@ -17,12 +17,12 @@ class App extends React.Component {
     this.fetchTweets();
   }
 
-  componentWillUnmount() {
-    this.cleanUpInterval();
-  }
-
   componentDidMount() {
     this.startInterval();
+  }
+
+  componentWillUnmount() {
+    this.cleanUpInterval();
   }
 
 
