@@ -22,7 +22,7 @@ class TweetWall extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
-      tweets: [...nextProps.newTweets, ...this.state.tweets]
+      tweets: this.state.tweets.push(nextProps.newTweets)
     });
   }
 
